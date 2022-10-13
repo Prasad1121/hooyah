@@ -1,25 +1,10 @@
-# Program to check if a number is prime or not
+# This program adds two numbers
 
-num = 29
+num1 = 1.5
+num2 = 6.3
 
-# To take input from the user
-#num = int(input("Enter a number: "))
+# Add two numbers
+sum = num1 + num2
 
-# define a flag variable
-flag = False
-
-# prime numbers are greater than 1
-if num > 1:
-    # check for factors
-    for i in range(2, num):
-        if (num % i) == 0:
-            # if factor is found, set flag to True
-            flag = True
-            # break out of loop
-            break
-
-# check if flag is True
-if flag:
-    print(num, "is not a prime number")
-else:
-    print(num, "is a prime number")
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
